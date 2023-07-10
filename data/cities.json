@@ -49,16 +49,40 @@
       "id": 98443201
     },
     {
-      "cityName": "Redding",
+      "cityName": "Savannah",
       "country": "United States of America (the)",
       "emoji": "🇺🇸",
-      "date": "2023-07-08T22:20:55.003Z",
+      "date": "2023-07-10T15:31:01.703Z",
+      "notes": "Wow what an amazing place!",
+      "position": {
+        "lat": "32.0639555946604",
+        "lng": "-81.05712890625001"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Los Angeles",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2023-07-10T16:21:42.298Z",
       "notes": "",
       "position": {
-        "lat": "41.31907562295139",
-        "lng": "-73.33923339843751"
+        "lat": "34.01851844336969",
+        "lng": "-118.49338531494142"
       },
-      "id": 98443202
+      "id": 98443204
+    },
+    {
+      "cityName": "Oslo",
+      "country": "Norway",
+      "emoji": "🇳🇴",
+      "date": "2023-07-10T16:22:03.503Z",
+      "notes": "Test",
+      "position": {
+        "lat": "59.91252504294985",
+        "lng": "10.74016571044922"
+      },
+      "id": 98443205
     }
   ]
 }

@@ -1,5 +1,6 @@
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useReducer,
@@ -79,20 +80,24 @@ export const CitiesProvider = ({ children }) => {
     };
     getCities();
   }, []);
-
-  const getCity = async id => {
-    dispatch({ type: 'loading' });
-    try {
-      const res = await fetch(`http://localhost:8000/cities/${id}`);
-      const data = await res.json();
-      dispatch({ type: 'cityLoaded', payload: data });
-    } catch (err) {
-      dispatch({
-        type: 'rejected',
-        payload: 'There was an error loading city...',
-      });
-    }
-  };
+  //we use the useCallback hook to preserve the function and avoid infite loops in the useEffect dependency where this function is called
+  const getCity = useCallback(
+    async id => {
+      if (Number(id) === cityInfo.id) return;
+      dispatch({ type: 'loading' });
+      try {
+        const res = await fetch(`http://localhost:8000/cities/${id}`);
+        const data = await res.json();
+        dispatch({ type: 'cityLoaded', payload: data });
+      } catch (err) {
+        dispatch({
+          type: 'rejected',
+          payload: 'There was an error loading city...',
+        });
+      }
+    },
+    [cityInfo.id]
+  );
 
   const uploadCity = async newCity => {
     dispatch({ type: 'loading' });
