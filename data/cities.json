@@ -1,0 +1,64 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": 73930385
+    },
+    {
+      "cityName": "New York City",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2023-07-08T16:20:45.414Z",
+      "notes": "Best city in the world 😍😍😍",
+      "position": {
+        "lat": "40.78989968531352",
+        "lng": "-73.95172119140626"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Buenos Aires",
+      "country": "Argentina",
+      "emoji": "🇦🇷",
+      "date": "2023-07-08T16:25:05.883Z",
+      "notes": "",
+      "position": {
+        "lat": "-34.63320791137958",
+        "lng": "-58.42529296875001"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Newark",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2023-07-08T16:27:30.912Z",
+      "notes": "",
+      "position": {
+        "lat": "40.72228267283148",
+        "lng": "-74.16320800781251"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Redding",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2023-07-08T22:20:55.003Z",
+      "notes": "",
+      "position": {
+        "lat": "41.31907562295139",
+        "lng": "-73.33923339843751"
+      },
+      "id": 98443202
+    }
+  ]
+}
